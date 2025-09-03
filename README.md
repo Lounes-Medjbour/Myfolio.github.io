@@ -1,2 +1,2 @@
-# Myfolio.github.io
+# MyFolio.github.io
 This is my portfolio where I show my skills.
