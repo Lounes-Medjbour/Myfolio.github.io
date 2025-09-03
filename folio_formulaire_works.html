@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MyFolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <link rel="stylesheet" href="index.css">
+  <script src="index.js" defer></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="presentation">
+      <h1>Bonjour, je suis Lounes</h1>
+      <p>Passionné par le domaine de l'Informatique, je suis a la recherche d'un stage de 12 semaines.</p>
+    </div>
+    <div class="photo">
+      <div class="photo-inner"></div>
+    </div>
+  </header>
+
+  <!-- A PROPOS -->
+  <section id="about">
+    <div class="content-wrapper">
+      <h2>À propos</h2>
+      <p>Je suis etudiant en Licence 3 Infroamtique et application a l'université Paris cité, toujours curieux d'apprendre de nouvelles technologies et de relever des défis. 
+        Mon objectif est de créer des applications performantes, ergonomiques et agréables à utiliser.</p>
+    </div>
+  </section>
+
+  <!-- COMPÉTENCES -->
+  <section id="skills">
+    <div class="content-wrapper">
+      <h2>Compétences</h2>
+      <div class="skills-icons">
+        <div class="skill-item">
+          <i class="devicon-html5-plain colored"></i>
+          <span>HTML5</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-css3-plain colored"></i>
+          <span>CSS3</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-javascript-plain colored"></i>
+          <span>JavaScript</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-java-plain colored"></i>
+          <span>Java</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-c-plain colored"></i>
+          <span>C</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-python-plain colored"></i>
+          <span>Python</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-mysql-plain colored"></i>
+          <span>MySql</span>
+        </div>
+        <div class="skill-item">
+          <i class="devicon-php-plain colored"></i>
+          <span>Php</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJETS -->
+  <section id="projects">
+    <div class="content-wrapper">
+      <h2>Projets</h2>
+      <div class="carousel">
+        <div class="carousel-track" id="carousel-track">
+          <div class="carousel-item">
+            <img src="javaScootrental_screen.png" alt="Application Java">
+            <div class="caption">
+              <h3>Gestion de location de scooters</h3>
+              <p>Application Java avec interface graphique</p>
+            </div>
+          </div>
+            <div class="carousel-item">
+            <img src="javaScootrental_screen1.png" alt="Application Java">
+          </div>
+            <div class="carousel-item">
+            <img src="javaScootrental_screen2.png" alt="Application Java">
+          </div>
+          <div class="carousel-item">
+            <img src="site_myBody.png" alt="Site Web">
+            <div class="caption">
+              <h3>MyBody Fitness</h3>
+              <p>Site web basic calcule les calories nécessaire dans la journée en fonction du poids, taille et age.</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="Nagetto.png" alt="Site Web" >
+            <div class="caption">
+              <h3>Nagetto</h3>
+              <p>site web</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="nagetto_reservation.png" alt="Site Web">
+            <div class="caption">
+            <p>Avec option de reservation disponible</p>
+            </div>
+          </div>
+
+          <div class="carousel-item">
+            <img src="nagetto_menu.png"alt="Site Web">
+            <div class="caption">
+              <p>Menu</p>
+            </div>
+          </div>          
+
+          <div class="carousel-item">
+            <img src="pfs.png" alt="Site Web">
+            <div class="caption">
+              <h3>Rock paper scissors</h3>
+              <p>Jeu développé en html, Css et JS</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="pfs1.png" alt="Site Web">
+          </div>
+
+        </div>
+        <div class="carousel-indicators" id="carousel-indicators"></div>
+        <button class="carousel-btn prev">←</button>
+        <button class="carousel-btn next">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="content-wrapper">
+      <h2>Me contacter</h2>
+      
+      <!-- Message de statut du formulaire -->
+      <div id="form-message" class="form-message"></div>
+      
+      <form id="contact-form">
+        <div class="form-group">
+          <input type="text" id="name" name="name" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" placeholder="Votre message" rows="5" required></textarea>
+        </div>
+        <button type="submit" id="submit-btn">Envoyer</button>
+      </form>
+      <div class="contacts">
+        <a href="https://instagram.com" target="_blank">
+          <i class="fab fa-instagram"></i>
+          <span>Instagram</span>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+          <i class="fab fa-facebook"></i>
+          <span>Facebook</span>
+        </a>
+        <a href="https://www.linkedin.com/in/lounes-medjbour-297646291/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+          <span>LinkedIn</span>
+        </a>
+        <a href="mailto:lounesmedjbourlounes@gmail.com" target="_blank">
+          <i class="fas fa-envelope"></i>
+          <span>Email</span>
+        </a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
